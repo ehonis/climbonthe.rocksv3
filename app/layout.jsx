@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import MobileNav from "./ui/navbar";
+import NavBar from "./ui/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,10 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="fixed inset-x-0 bottom-0 left-0 h-16 overflow-hidden bg-bg1">
-          <MobileNav />
-        </div>
+      <body className={`${inter.className} bg-bg0`}>
+        <NavBar />
         {children}
       </body>
     </html>
