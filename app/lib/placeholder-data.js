@@ -2,41 +2,45 @@ export const ropeRoutes = [
   {
     name: "The Wurliest Burliest Man",
     grade: "5.10",
-    color: "yellow",
+    color: "blue",
     type: "lead",
     id: "00001",
-    image: "../public/img/rope1.jpg",
+    image: "/img/rope1.jpg",
     description: "A super fun climb with a lot of exposure",
     date: "02/02/2024",
+    href: "/routes/the-wurliest-burliest-man",
   },
   {
-    name: "the long dive",
+    name: "The Long Dive",
     grade: "5.8",
-    color: "white",
+    color: "yellow",
     type: "toprope",
     id: "00002",
-    image: "../public/img/rope2.jpg",
+    image: "/img/rope2.jpg",
     description: "A long climb with a lot of exposure",
     date: "02/03/2024",
+    href: "/routes/the-long-dive",
   },
 ];
 export const boulderRoutes = [
   {
     name: "The Boulder Problem",
     grade: "V2",
-    color: "blue",
+    color: "green",
     id: "00001",
-    image: "../public/img/boulder1.jpg",
+    image: "/img/boulder1.jpg",
     discription: "A long climb with a lot of exposure",
     date: "2021-06-02",
+    href: "/routes/the-boulder-problem",
   },
 ];
 export const events = [
   {
     name: "2024 Ropes League",
     date: "2024-06-02",
-    image: "../public/img/trophy.png",
+    image: "/img/trophy.png",
     active: true,
+    href: "/events/2024-ropes-league",
   },
 ];
 export const profiles = [

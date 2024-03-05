@@ -1,50 +1,122 @@
 import { ropeRoutes, boulderRoutes, events } from "../lib/placeholder-data";
+import Image from "next/image";
+import clsx from "clsx";
+import Link from "next/link";
 
-export default function RouteTile() {
-  <>
-    <h2 class="ml-5 text-3xl font-bold text-white">New Routes & Boulders</h2>
-    <div class="m-5 flex flex-col justify-center overflow-y-hidden rounded-3xl bg-bg1 p-3 shadow-lg">
-      <div class="gradient-background-blue mb-4 flex h-20 w-full rounded-full last:mb-0">
-        <div class="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">
-          <img
-            src="img/rope1.jpg"
-            alt="picture of route"
-            class="m-1 w-12 rounded-l-full"
-          />
-          <p class="self-center text-center text-2xl font-semibold text-white">
-            The Wurliest Burliest Man
-          </p>
-          <p class="mr-3 self-center font-semibold text-white">5.12-</p>
-        </div>
-      </div>
-      <div class="gradient-background-red mb-4 flex h-20 w-full rounded-full last:mb-0">
-        <div class="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">
-          <img
-            src="img/rope2.jpg"
-            alt="picture of route"
-            class="m-1 w-12 rounded-l-full"
-          />
-          <p class="self-center text-2xl font-semibold text-white">
-            The Long Dive
-          </p>
-          <p class="mr-3 self-center font-semibold text-white">5.10&nbsp;</p>
-        </div>
-      </div>
-      <div class="gradient-background-black mb-4 flex h-20 w-full rounded-full last:mb-0">
-        <div class="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">
-          <img
-            src="img/boulder1.jpg"
-            alt="picture of route"
-            class="m-1 w-12 rounded-l-full"
-          />
-          <p class="self-center text-center text-2xl font-semibold text-white">
-            The Worldest Longest Boulder
-          </p>
-          <p class="mr-3 self-center font-semibold text-white">
-            V3&nbsp;&nbsp;
-          </p>
-        </div>
-      </div>
-    </div>
-  </>;
+export default function RouteTiles({ routeType }) {
+  if (routeType === "rope") {
+    return (
+      <>
+        {ropeRoutes.map((route) => {
+          return (
+            <>
+              <Link href={route.href} className="mb-4 last:mb-0">
+                <div
+                  className={clsx(
+                    "flex h-20 w-full rounded-full ",
+                    { "gradient-background-blue": route.color === "blue" },
+                    { "gradient-background-red": route.color === "red" },
+                    { "gradient-background-black": route.color === "black" },
+                    { "gradient-background-green": route.color === "green" },
+                    { "gradient-background-yellow": route.color === "yellow" },
+                    { "gradient-background-purple": route.color === "purple" },
+                    { "gradient-background-pink": route.color === "pink" },
+                    { "gradient-background-orange": route.color === "orange" },
+                    { "gradient-background-white": route.color === "white" },
+                  )}
+                >
+                  <div className="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">
+                    <Image
+                      src={route.image}
+                      alt="image"
+                      width={800}
+                      height={1000}
+                      className="m-1 w-12 rounded-l-full"
+                    />
+
+                    <p className="self-center text-center text-2xl font-semibold text-white">
+                      {route.name}
+                    </p>
+                    <p className="mr-3 self-center font-semibold text-white">
+                      {route.grade}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            </>
+          );
+        })}
+      </>
+    );
+  } else if (routeType === "boulder") {
+    return (
+      <>
+        {boulderRoutes.map((route) => {
+          return (
+            <>
+              <Link href={route.href}>
+                <div
+                  className={clsx(
+                    "mb-4 flex h-20 w-full rounded-full last:mb-0",
+                    { "gradient-background-blue": route.color === "blue" },
+                    { "gradient-background-red": route.color === "red" },
+                    { "gradient-background-black": route.color === "black" },
+                    { "gradient-background-green": route.color === "green" },
+                    { "gradient-background-yellow": route.color === "yellow" },
+                    { "gradient-background-purple": route.color === "purple" },
+                    { "gradient-background-pink": route.color === "pink" },
+                    { "gradient-background-orange": route.color === "orange" },
+                    { "gradient-background-white": route.color === "white" },
+                  )}
+                >
+                  <div className="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">
+                    <Image
+                      src={route.image}
+                      alt="image"
+                      width={800}
+                      height={1000}
+                      className="m-1 w-12 rounded-l-full"
+                    />
+
+                    <p className="self-center text-center text-2xl font-semibold text-white">
+                      {route.name}
+                    </p>
+                    <p className="mr-3 self-center font-semibold text-white">
+                      {route.grade}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            </>
+          );
+        })}
+      </>
+    );
+  } else if (routeType === "event") {
+    return (
+      <>
+        {events.map((event) => {
+          return (
+            <>
+              <div className="gradient-background-comp mb-4 flex h-20 w-full rounded-full last:mb-0">
+                <div className="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">
+                  <Image
+                    src={event.image}
+                    alt="image"
+                    width={512}
+                    height={512}
+                    className="ml-4 h-12 w-12 self-center justify-self-start"
+                  />
+
+                  <p className="mr-4 self-center text-center text-2xl font-semibold text-white">
+                    {event.name}
+                  </p>
+                </div>
+              </div>
+            </>
+          );
+        })}
+      </>
+    );
+  }
 }

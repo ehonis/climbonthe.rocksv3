@@ -75,4 +75,18 @@ body {
       rgb(255, 119, 0)
     );
   }
+  .gradient-background-purple {
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 0, 255),
+      rgb(0, 0, 255)
+    );
+  }
+  .gradient-background-yellow {
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 0),
+      rgb(255, 204, 0)
+    );
+  }
 }
