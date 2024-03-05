@@ -1,3 +1,5 @@
+import Link from "next/link";
+import BasicButton from "./basic-button";
 export default function IndexHeader() {
   return (
     <div>
@@ -7,16 +9,13 @@ export default function IndexHeader() {
         &nbsp;Interactive Guidebook
       </h1>
       <div className="flex justify-center">
-        <a href="loginPage.html">
-          <button className="mb-5 mr-5 rounded-md border-none bg-green-400 px-5 pb-3 pt-3 transition-transform duration-300 hover:scale-110 hover:border-solid hover:border-white">
-            Signup
-          </button>
-        </a>
-        <a href="loginPage.html">
-          <button className="mb-5 mr-5 rounded-md border-none bg-blue px-5 pb-3 pr-5 pt-3 transition-transform duration-300 hover:scale-110 hover:border-solid hover:border-white">
-            Login
-          </button>
-        </a>
+        <Link href="/signup">
+          <BasicButton text="Signup" color="green" />
+        </Link>
+
+        <Link href="/login">
+          <BasicButton text="Login" color="blue" />
+        </Link>
       </div>
     </div>
   );
