@@ -1,26 +1,11 @@
 import Image from "next/image";
+import IndexHeader from "./ui/index-header";
 
 export default function Home() {
   return (
     <main className="h-full w-full">
       <div className="m-5 flex flex-col flex-wrap justify-center overflow-hidden rounded-3xl bg-bg1 p-5 shadow-lg">
-        <h1 className="justify-self-center p-8 text-center text-2xl font-bold text-primary">
-          Welcome To&nbsp;
-          <span className="gradient-text">On The Rocks</span>
-          &nbsp;Interactive Guidebook
-        </h1>
-        <div className="flex justify-center">
-          <a href="loginPage.html">
-            <button className="mb-5 mr-5 rounded-md border-none bg-green-400 px-5 pb-3 pt-3 transition-transform duration-300 hover:scale-110 hover:border-solid hover:border-white">
-              Signup
-            </button>
-          </a>
-          <a href="loginPage.html">
-            <button className="mb-5 mr-5 rounded-md border-none bg-blue px-5 pb-3 pr-5 pt-3 transition-transform duration-300 hover:scale-110 hover:border-solid hover:border-white">
-              Login
-            </button>
-          </a>
-        </div>
+        <IndexHeader />
       </div>
       <div className="flex flex-col">
         <h2 className="ml-5 text-3xl font-bold text-white">
