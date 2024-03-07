@@ -4,7 +4,7 @@ import RouteTiles from "./ui/route-tile";
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
+    <main className="h-screen w-full">
       <div className="m-5 flex flex-col flex-wrap justify-center overflow-hidden rounded-3xl bg-bg1 p-5 shadow-lg">
         <IndexHeader />
       </div>
