@@ -39,6 +39,7 @@ export const events = [
     name: "2024 Ropes League",
     date: "2024-06-02",
     image: "/img/trophy.png",
+    id: "00001",
     active: true,
     href: "/events/2024-ropes-league",
   },

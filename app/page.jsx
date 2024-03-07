@@ -1,4 +1,3 @@
-import Image from "next/image";
 import IndexHeader from "./ui/index-header";
 import RouteTiles from "./ui/route-tile";
 
