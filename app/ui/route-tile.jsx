@@ -10,7 +10,7 @@ export default function RouteTiles({ routeType }) {
         {ropeRoutes.map((route) => {
           return (
             <>
-              <Link href={route.href} className="mb-4 last:mb-0">
+              <Link key={route.id} href={route.href} className="mb-4 last:mb-0">
                 <div
                   className={clsx(
                     "flex h-20 w-full rounded-full ",
@@ -54,7 +54,7 @@ export default function RouteTiles({ routeType }) {
         {boulderRoutes.map((route) => {
           return (
             <>
-              <Link href={route.href}>
+              <Link key={route.id} href={route.href}>
                 <div
                   className={clsx(
                     "mb-4 flex h-20 w-full rounded-full last:mb-0",
@@ -97,7 +97,7 @@ export default function RouteTiles({ routeType }) {
       <>
         {events.map((event) => {
           return (
-            <>
+            <Link href={event.href} key={event.id}>
               <div className="gradient-background-comp mb-4 flex h-20 w-full rounded-full last:mb-0">
                 <div className="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">
                   <Image
@@ -113,7 +113,7 @@ export default function RouteTiles({ routeType }) {
                   </p>
                 </div>
               </div>
-            </>
+            </Link>
           );
         })}
       </>

@@ -1,9 +1,30 @@
 "use client";
-import { randomColor } from "@/app/lib/utils";
-import TopdownParts from "./TopdownParts";
-import { useState } from "react";
+
+import DesktopTopdownParts from "./desktop-topdown-parts";
+
+import { useState, useEffect } from "react";
+import MobileTopdownParts from "./mobile-topdown-parts";
 
 export default function TopDown() {
+  const [screenSize, setScreenSize] = useState("");
+
+  useEffect(() => {
+    // Function to update screen size state on window resize
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 768) {
+        setScreenSize("small");
+      } else if (width >= 768) {
+        setScreenSize("medium");
+      }
+    };
+
+    // Call handleResize on initial mount and on window resize
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <svg
@@ -15,7 +36,8 @@ export default function TopDown() {
       >
         <defs id="defs1" />
         <g id="layer2" transform="translate(-9.3866979,-163.67377)">
-          <TopdownParts />
+          {screenSize === "small" && <MobileTopdownParts />}
+          {screenSize === "medium" && <DesktopTopdownParts />}
         </g>
       </svg>
     </>
