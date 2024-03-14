@@ -5,11 +5,10 @@ import DesktopTopdownParts from "./desktop-topdown-parts";
 import { useState, useEffect } from "react";
 import MobileTopdownParts from "./mobile-topdown-parts";
 
-export default function TopDown() {
+export default function TopDown({ onData }) {
   const [screenSize, setScreenSize] = useState("");
 
   useEffect(() => {
-    // Function to update screen size state on window resize
     const handleResize = () => {
       const width = window.innerWidth;
       if (width < 768) {
@@ -19,7 +18,6 @@ export default function TopDown() {
       }
     };
 
-    // Call handleResize on initial mount and on window resize
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -36,7 +34,7 @@ export default function TopDown() {
       >
         <defs id="defs1" />
         <g id="layer2" transform="translate(-9.3866979,-163.67377)">
-          {screenSize === "small" && <MobileTopdownParts />}
+          {screenSize === "small" && <MobileTopdownParts onData={onData} />}
           {screenSize === "medium" && <DesktopTopdownParts />}
         </g>
       </svg>

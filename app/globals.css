@@ -8,6 +8,16 @@
   }
 }
 @layer components {
+  .gradient-background-gray {
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      rgb(255, 255, 255)
+    );
+  }
+  .gradient-background-orange {
+    background-image: linear-gradient(to right, orange, rgb(255, 140, 0));
+  }
   .gradient-text {
     background-image: linear-gradient(to right, red, rgb(255, 140, 0));
     -webkit-background-clip: text;

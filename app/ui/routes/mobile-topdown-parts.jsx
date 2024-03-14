@@ -41,14 +41,17 @@ function useClickState(initialColor = "#FFFFFF") {
 
   return [fillColor, handleClick, ref];
 }
-function MainWall1() {
+function MainWall1({ onClick }) {
   const [fillColor, handleClick, ref] = useClickState("#FFFFFF");
 
   return (
     <g
       className="cursor-pointer"
       fill={fillColor}
-      onClick={handleClick}
+      onClick={(e) => {
+        handleClick(e);
+        onClick("main1");
+      }}
       ref={ref}
     >
       <rect
@@ -100,14 +103,17 @@ function MainWall1() {
     </g>
   );
 }
-function ABWall() {
+function ABWall({ onClick }) {
   const [fillColor, handleClick, ref] = useClickState("#FFFFFF");
 
   return (
     <g
       className="cursor-pointer"
       fill={fillColor}
-      onClick={handleClick}
+      onClick={(e) => {
+        handleClick(e);
+        onClick("AB");
+      }}
       ref={ref}
     >
       <rect
@@ -150,13 +156,16 @@ function ABWall() {
     </g>
   );
 }
-function MainWall2() {
+function MainWall2({ onClick }) {
   const [fillColor, handleClick, ref] = useClickState("#FFFFFF");
   return (
     <g
       className="cursor-pointer"
       fill={fillColor}
-      onClick={handleClick}
+      onClick={(e) => {
+        handleClick(e);
+        onClick("main2");
+      }}
       ref={ref}
     >
       <rect
@@ -225,13 +234,16 @@ function MainWall2() {
     </g>
   );
 }
-function Boulder1() {
+function Boulder1({ onClick }) {
   const [fillColor, handleClick, ref] = useClickState("#FFFFFF");
   return (
     <g
       className="cursor-pointer"
       fill={fillColor}
-      onClick={handleClick}
+      onClick={(e) => {
+        handleClick(e);
+        onClick("boulder1");
+      }}
       ref={ref}
     >
       <rect
@@ -286,13 +298,16 @@ function Boulder1() {
     </g>
   );
 }
-function Boulder2() {
+function Boulder2({ onClick }) {
   const [fillColor2, handleClick, ref] = useClickState("#FFFFFF");
   return (
     <g
       className="cursor-pointer"
       fill={fillColor2}
-      onClick={handleClick}
+      onClick={(e) => {
+        handleClick(e);
+        onClick("boulder2");
+      }}
       ref={ref}
     >
       <rect
@@ -347,14 +362,14 @@ function Boulder2() {
   );
 }
 
-export default function MobileTopdownParts({ setActiveWall }) {
+export default function MobileTopdownParts({ onData }) {
   return (
     <>
-      <MainWall1 onClick={() => setActiveWall("mainWall1")} />
-      <ABWall onClick={() => setActiveWall("ABWall")} />
-      <MainWall2 onClick={() => setActiveWall("mainWall2")} />
-      <Boulder1 onClick={() => setActiveWall("boulder1")} />
-      <Boulder2 onClick={() => setActiveWall("boulder2")} />
+      <MainWall1 onClick={onData} />
+      <ABWall onClick={onData} />
+      <MainWall2 onClick={onData} />
+      <Boulder1 onClick={onData} />
+      <Boulder2 onClick={onData} />
     </>
   );
 }

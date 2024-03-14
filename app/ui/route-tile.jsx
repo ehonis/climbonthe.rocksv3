@@ -23,6 +23,7 @@ export default function RouteTiles({ routeType }) {
                     { "gradient-background-pink": route.color === "pink" },
                     { "gradient-background-orange": route.color === "orange" },
                     { "gradient-background-white": route.color === "white" },
+                    { "gradient-background-gray": route.color === "gray" },
                   )}
                 >
                   <div className="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">
@@ -54,10 +55,10 @@ export default function RouteTiles({ routeType }) {
         {boulderRoutes.map((route) => {
           return (
             <>
-              <Link key={route.id} href={route.href}>
+              <Link key={route.id} href={route.href} className="mb-4 last:mb-0">
                 <div
                   className={clsx(
-                    "mb-4 flex h-20 w-full rounded-full last:mb-0",
+                    "flex h-20 w-full rounded-full ",
                     { "gradient-background-blue": route.color === "blue" },
                     { "gradient-background-red": route.color === "red" },
                     { "gradient-background-black": route.color === "black" },
@@ -67,6 +68,7 @@ export default function RouteTiles({ routeType }) {
                     { "gradient-background-pink": route.color === "pink" },
                     { "gradient-background-orange": route.color === "orange" },
                     { "gradient-background-white": route.color === "white" },
+                    { "gradient-background-gray": route.color === "gray" },
                   )}
                 >
                   <div className="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">
