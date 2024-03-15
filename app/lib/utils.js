@@ -73,3 +73,19 @@ export function getWallRoutes(wall) {
   }
   return walls;
 }
+
+export function nameConverter(name) {
+  let ConvertedName = "";
+  if (name === "main1") {
+    ConvertedName = "Chimney -> Arch";
+  } else if (name === "main2") {
+    ConvertedName = "Cave -> Arch ";
+  } else if (name === "boulder1") {
+    ConvertedName = "Slab -> Cave -> Vert";
+  } else if (name === "boulder2") {
+    ConvertedName = "Overhang -> Vert ";
+  } else {
+    ConvertedName = "Auto Belay";
+  }
+  return ConvertedName;
+}

@@ -117,14 +117,6 @@ function ABWall({ onClick }) {
       ref={ref}
     >
       <rect
-        id="AB-0"
-        width="6.0286111"
-        height="18.150414"
-        x="-117.86487"
-        y="131.13966"
-        transform="rotate(-45)"
-      />
-      <rect
         id="AB-1"
         width="6.0286111"
         height="41.551445"
@@ -168,6 +160,14 @@ function MainWall2({ onClick }) {
       }}
       ref={ref}
     >
+      <rect
+        id="AB-0"
+        width="6.0286111"
+        height="18.150414"
+        x="-118.46487"
+        y="131.83966"
+        transform="rotate(-45)"
+      />
       <rect
         id="main0"
         width="6.0286111"

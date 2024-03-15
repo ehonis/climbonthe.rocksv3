@@ -50,7 +50,7 @@ export const ropeRoutes = [
   {
     name: "Cheese has protein?",
     grade: "5.8",
-    color: "orange",
+    color: "pink",
     type: "boulder",
     id: "00005",
     image: "/img/boulder1.jpg",
