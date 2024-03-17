@@ -1,6 +1,6 @@
 import RouteTiles from "@/app/ui/route-tile";
 
-import CircleButtons from "@/app/ui/routes/circleButtons";
+import CircleButtons from "@/app/ui/routes/circle-buttons";
 
 export default function DefaultPage() {
   return (

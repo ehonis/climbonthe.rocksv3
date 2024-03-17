@@ -1,4 +1,4 @@
-import { getNewRoutes } from "../lib/utils";
+import { getNewRoutes } from "../../lib/utils";
 import Image from "next/image";
 import clsx from "clsx";
 import Link from "next/link";
@@ -15,16 +15,16 @@ export default function NewRoutes({ int }) {
               <div
                 className={clsx(
                   "flex h-20 w-full rounded-full ",
-                  { "gradient-background-blue": route.color === "blue" },
-                  { "gradient-background-red": route.color === "red" },
-                  { "gradient-background-black": route.color === "black" },
-                  { "gradient-background-green": route.color === "green" },
-                  { "gradient-background-yellow": route.color === "yellow" },
-                  { "gradient-background-purple": route.color === "purple" },
-                  { "gradient-background-pink": route.color === "pink" },
-                  { "gradient-background-orange": route.color === "orange" },
-                  { "gradient-background-white": route.color === "white" },
-                  { "gradient-background-gray": route.color === "gray" },
+                  { "gradient-background-blue": route.color === "Blue" },
+                  { "gradient-background-red": route.color === "Red" },
+                  { "gradient-background-black": route.color === "Black" },
+                  { "gradient-background-green": route.color === "Green" },
+                  { "gradient-background-yellow": route.color === "Yellow" },
+                  { "gradient-background-purple": route.color === "Purple" },
+                  { "gradient-background-pink": route.color === "Pink" },
+                  { "gradient-background-orange": route.color === "Orange" },
+                  { "gradient-background-white": route.color === "White" },
+                  { "gradient-background-gray": route.color === "Gray" },
                 )}
               >
                 <div className="m-1 flex w-full justify-between overflow-hidden rounded-full bg-bg2">

@@ -259,7 +259,7 @@ function Boulder1({ onClick }) {
         id="slab"
         width="6.0286111"
         height="50.094456"
-        x="-168.70238"
+        x="-166.70238"
         y="142.97017"
         transform="rotate(-90)"
       />

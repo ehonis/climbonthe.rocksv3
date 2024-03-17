@@ -19,7 +19,13 @@
     background-image: linear-gradient(to right, orange, rgb(255, 140, 0));
   }
   .gradient-text {
-    background-image: linear-gradient(to right, red, rgb(255, 140, 0));
+    background-image: linear-gradient(to top right, red, rgb(255, 140, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .gradient-text-blue {
+    background-image: linear-gradient(to top right, blue, rgb(4, 235, 251));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

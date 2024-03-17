@@ -14,9 +14,9 @@ module.exports = {
         bg1: "#343542",
         bg2: "#4c4f5a",
         iconbg: "#8b8c8f",
-        orange: "#ff8a00",
-        red: "#e52e71",
-        blue: "#3cb1e7",
+        orangee: "#ff8a00",
+        redd: "#e52e71",
+        bluee: "#3cb1e7",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

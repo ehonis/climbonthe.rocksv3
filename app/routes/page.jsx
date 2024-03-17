@@ -17,7 +17,7 @@ export default function Routes() {
     <main className="h-{120vh} w-full">
       <div className="m-5 flex flex-col justify-center overflow-y-hidden rounded-3xl bg-bg1 p-3 shadow-lg">
         <TopDown onData={handleData} />
-        <p className="animate-flash-slow self-center text-sm font-semibold text-white">
+        <p className="animate-flash-slow self-center text-center text-sm font-semibold text-white">
           Tap anywhere on the map to show routes on that wall!
         </p>
       </div>

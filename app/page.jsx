@@ -1,6 +1,6 @@
 import IndexHeader from "./ui/index-header";
 import RouteTiles from "./ui/route-tile";
-import NewRoutes from "./ui/new-route-tile";
+import NewRoutes from "./ui/routes/new-route-tile";
 import Link from "next/link";
 
 export default function Home() {
