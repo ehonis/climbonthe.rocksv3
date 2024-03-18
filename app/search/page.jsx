@@ -8,7 +8,7 @@ export default function Page({ searchParams }) {
 
   return (
     <div>
-      <div class="ml-5 mr-5 mt-4 flex justify-between">
+      <div className="ml-5 mr-5 mt-4 flex justify-between">
         <Search />
         <button className="rounded-full bg-bg1 p-2">
           <svg

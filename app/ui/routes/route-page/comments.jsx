@@ -8,6 +8,7 @@ function getProfile(name) {
 }
 
 export default function Comments({ route }) {
+  let count = 0;
   return (
     <>
       <h1 className="ml-5 mr-5 text-2xl font-bold text-white">Comments</h1>
@@ -16,7 +17,7 @@ export default function Comments({ route }) {
           const user = getProfile(comment.username);
 
           return (
-            <>
+            <div key={count++}>
               <div className="flex w-full rounded-lg bg-bg2 p-2 shadow-lg">
                 <div className="mr-5 flex-shrink-0 self-center">
                   <Link href={user.href} className="w-30">
@@ -40,7 +41,7 @@ export default function Comments({ route }) {
                   </p>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

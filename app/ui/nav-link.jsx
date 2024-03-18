@@ -43,7 +43,6 @@ const links = [
 ];
 if (currentUser) {
   if (currentUser.admin === true) {
-    console.log("admin");
     links.splice(3, 0, {
       name: "edit route",
       href: "/edit",

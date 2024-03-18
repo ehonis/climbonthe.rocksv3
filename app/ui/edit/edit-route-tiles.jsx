@@ -2,13 +2,15 @@ import { boulderRoutes, ropeRoutes, events } from "@/app/lib/placeholder-data";
 import Image from "next/image";
 
 export default function EditRouteTiles({ type }) {
-  console.log(type);
   if (type === "rope") {
     return (
       <div>
         {ropeRoutes.map((route) => {
           return (
-            <div className="m-3 flex justify-between rounded-xl bg-bg1 p-2 shadow-lg">
+            <div
+              key={route.id}
+              className="m-3 flex justify-between rounded-xl bg-bg1 p-2 shadow-lg"
+            >
               <Image
                 src={route.image}
                 width={1000}
@@ -35,7 +37,10 @@ export default function EditRouteTiles({ type }) {
       <>
         {boulderRoutes.map((route) => {
           return (
-            <div className="m-3 flex justify-between rounded-xl bg-bg1 p-2 shadow-lg">
+            <div
+              key={route.id}
+              className="m-3 flex justify-between rounded-xl bg-bg1 p-2 shadow-lg"
+            >
               <Image
                 src={route.image}
                 width={1000}
@@ -62,7 +67,10 @@ export default function EditRouteTiles({ type }) {
       <>
         {events.map((route) => {
           return (
-            <div className="m-3 flex justify-between rounded-xl bg-bg1 p-2 shadow-lg">
+            <div
+              key={route.id}
+              className="m-3 flex justify-between rounded-xl bg-bg1 p-2 shadow-lg"
+            >
               <Image
                 src={route.image}
                 width={1000}
