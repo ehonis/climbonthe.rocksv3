@@ -10,6 +10,17 @@ export const ropeRoutes = [
     date: "02/02/2024",
     href: "/routes/route-page/the-wurliest-burliest-man",
     location: "main1",
+    comments: [
+      {
+        username: "jack",
+        comment:
+          "loved this route, pretty easy beginning, felt like 5.6, but ended up pretty hard in the last moves",
+      },
+      {
+        username: "ehonis",
+        comment: "really hard route, jack is wrong^",
+      },
+    ],
   },
   {
     name: "The Long Dive",
@@ -22,6 +33,17 @@ export const ropeRoutes = [
     date: "02/03/2024",
     href: "/routes/route-page/the-long-dive",
     location: "main2",
+    comments: [
+      {
+        username: "jack",
+        comment:
+          "loved this route, pretty easy beginning, felt like 5.6, but ended up pretty hard in the last moves",
+      },
+      {
+        username: "ehonis",
+        comment: "really hard route, jack is wrong^",
+      },
+    ],
   },
   {
     name: "The Crux Crusher",
@@ -34,6 +56,17 @@ export const ropeRoutes = [
     date: "02/04/2024",
     href: "/routes/route-page/the-crux-crusher",
     location: "main2",
+    comments: [
+      {
+        username: "jack",
+        comment:
+          "loved this route, pretty easy beginning, felt like 5.6, but ended up pretty hard in the last moves",
+      },
+      {
+        username: "ehonis",
+        comment: "really hard route, jack is wrong^",
+      },
+    ],
   },
   {
     name: "The Slab Master",
@@ -46,6 +79,17 @@ export const ropeRoutes = [
     date: "02/05/2024",
     href: "/routes/route-page/the-slab-master",
     location: "AB",
+    comments: [
+      {
+        username: "jack",
+        comment:
+          "loved this route, pretty easy beginning, felt like 5.6, but ended up pretty hard in the last moves",
+      },
+      {
+        username: "ehonis",
+        comment: "really hard route, jack is wrong^",
+      },
+    ],
   },
   {
     name: "Cheese has protein?",
@@ -58,6 +102,17 @@ export const ropeRoutes = [
     date: "02/06/2024",
     href: "/routes/route-page/cheese-has-protein",
     location: "main1",
+    comments: [
+      {
+        username: "jack",
+        comment:
+          "loved this route, pretty easy beginning, felt like 5.6, but ended up pretty hard in the last moves",
+      },
+      {
+        username: "ehonis",
+        comment: "really hard route, jack is wrong^",
+      },
+    ],
   },
 ];
 
@@ -73,11 +128,22 @@ export const boulderRoutes = [
     date: "2021-06-02",
     href: "/routes/route-page/the-boulder-problem",
     location: "boulder2",
+    comments: [
+      {
+        username: "jack",
+        comment:
+          "loved this route, pretty easy beginning, felt like 5.6, but ended up pretty hard in the last moves",
+      },
+      {
+        username: "ehonis",
+        comment: "really hard route, jack is wrong^",
+      },
+    ],
   },
   {
     name: "The Dyno King",
     grade: "V5",
-    color: "orange",
+    color: "Orange",
     type: "Boulder",
     id: "00005",
     image: "/img/boulder1.jpg",
@@ -85,6 +151,17 @@ export const boulderRoutes = [
     date: "02/06/2024",
     href: "/routes/route-page/the-dyno-king",
     location: "boulder1",
+    comments: [
+      {
+        username: "jack",
+        comment:
+          "loved this route, pretty easy beginning, felt like 5.6, but ended up pretty hard in the last moves",
+      },
+      {
+        username: "ehonis",
+        comment: "really hard route, jack is wrong^",
+      },
+    ],
   },
   {
     name: "wow nice moves",
@@ -97,6 +174,17 @@ export const boulderRoutes = [
     date: "02/06/2024",
     href: "/routes/route-page/the-dyno-king",
     location: "boulder1",
+    comments: [
+      {
+        username: "jack",
+        comment:
+          "loved this route, pretty easy beginning, felt like 5.6, but ended up pretty hard in the last moves",
+      },
+      {
+        username: "ehonis",
+        comment: "really hard route, jack is wrong^",
+      },
+    ],
   },
 ];
 export const events = [
@@ -115,16 +203,30 @@ export const profiles = [
     name: "Ethan",
     email: "e-24@live.com",
     admin: false,
-    image: "../Images/default.jpg",
+    role: null,
+    image: "/img/default-profile-pic.jpg",
     password: "password1234",
+    href: "/profile/ehonis",
   },
   {
-    name: "OTR_DJ",
+    username: "OTR_DJ",
     name: "DJ",
     email: "dj@gmail.com",
     admin: true,
-    image: "../Images/default.jpg",
+    role: "manager",
+    image: "/img/default-profile-pic.jpg",
     password: "password1234",
+    href: "/profile/OTR_DJ",
+  },
+  {
+    username: "jack",
+    name: "Jack",
+    email: "jack@gmail.com",
+    admin: true,
+    role: "routesetter",
+    image: "/img/jack_profilePic.png",
+    password: "password1234",
+    href: "/profile/jack",
   },
 ];
 export let currentUser = {
@@ -132,6 +234,6 @@ export let currentUser = {
   name: "DJ",
   email: "dj@gmail.com",
   admin: false,
-  image: "../Images/default.jpg",
+  image: "/img/default-profile-pic.jpg",
   password: "password1234",
 };
