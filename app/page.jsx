@@ -13,7 +13,7 @@ export default function Home() {
         <h2 className="ml-5 text-3xl font-bold text-white">
           New Routes &amp; Boulders
         </h2>
-        <div className=" m-5 mb-2 flex h-80 flex-col justify-start overflow-y-hidden rounded-3xl bg-bg1 bg-opacity-100 p-3 shadow-lg">
+        <div className=" scrollbar-hide m-5 mb-2 flex h-80 flex-col justify-start overflow-y-scroll rounded-3xl bg-bg1 bg-opacity-100 p-3 shadow-lg">
           <NewRoutes int={4} />
         </div>
         <Link

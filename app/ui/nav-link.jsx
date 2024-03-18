@@ -30,7 +30,7 @@ const links = [
 
   {
     name: "profile",
-    href: "/profile",
+    href: currentUser.href,
     icon: UserCircleIcon,
   },
 ];
@@ -61,7 +61,7 @@ export default function NavLinks() {
             >
               <LinkIcon
                 className={clsx(
-                  "h-[55px] w-[55px] self-center stroke-iconbg p-[8px]",
+                  "h-[50px] w-[50px] self-center stroke-iconbg p-[6px]",
                   {
                     "stroke-white": pathname === link.href,
                   },

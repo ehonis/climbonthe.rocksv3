@@ -144,8 +144,6 @@ function NewButton() {
 export default function circleButtons() {
   return (
     <div className="flex flex-row">
-      <FilterButton />
-      <PaletteButton />
       <NewButton />
     </div>
   );

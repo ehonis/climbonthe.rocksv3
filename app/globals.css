@@ -97,3 +97,12 @@
 .animate-flash-slow {
   animation: flash 2s infinite ease-in-out; /* Change duration to adjust the speed */
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
