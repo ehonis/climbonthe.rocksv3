@@ -2,7 +2,7 @@ import Link from "next/link";
 import BasicButton from "./basic-button";
 export default function IndexHeader() {
   return (
-    <div>
+    <div className="m-5 flex flex-col flex-wrap justify-center overflow-hidden rounded-3xl bg-bg1 p-5 shadow-lg">
       <h1 className="justify-self-center p-8 text-center text-2xl font-bold text-primary">
         Welcome To&nbsp;
         <span className="gradient-text">On The Rocks</span>

@@ -10,6 +10,13 @@ import Link from "next/link";
 import { currentUser } from "../lib/placeholder-data";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+let currentUserHref;
+
+try {
+  currentUserHref = currentUser.href;
+} catch (e) {
+  currentUserHref = "/login";
+}
 
 const links = [
   {
@@ -30,17 +37,19 @@ const links = [
 
   {
     name: "profile",
-    href: currentUser.href,
+    href: currentUserHref,
     icon: UserCircleIcon,
   },
 ];
-if (currentUser.admin === true) {
-  console.log("admin");
-  links.splice(3, 0, {
-    name: "edit route",
-    href: "/editRoute",
-    icon: PencilIcon,
-  });
+if (currentUser) {
+  if (currentUser.admin === true) {
+    console.log("admin");
+    links.splice(3, 0, {
+      name: "edit route",
+      href: "/edit",
+      icon: PencilIcon,
+    });
+  }
 }
 export default function NavLinks() {
   {

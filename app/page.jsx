@@ -2,13 +2,14 @@ import IndexHeader from "./ui/index-header";
 import RouteTiles from "./ui/route-tile";
 import NewRoutes from "./ui/routes/new-route-tile";
 import Link from "next/link";
+import { currentUser } from "./lib/placeholder-data";
+import ProfileHeader from "./ui/profile-header";
 
 export default function Home() {
   return (
     <main className="h-screen w-full">
-      <div className="m-5 flex flex-col flex-wrap justify-center overflow-hidden rounded-3xl bg-bg1 p-5 shadow-lg">
-        <IndexHeader />
-      </div>
+      {currentUser ? <ProfileHeader /> : <IndexHeader />}
+
       <div className="flex flex-col">
         <h2 className="ml-5 text-3xl font-bold text-white">
           New Routes &amp; Boulders
