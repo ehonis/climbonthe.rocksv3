@@ -12,7 +12,7 @@ export default function Comments({ route }) {
   return (
     <>
       <h1 className="ml-5 mr-5 text-2xl font-bold text-white">Comments</h1>
-      <div className="ml-5 mr-5 mt-3 flex flex-col gap-3 rounded-xl bg-bg1 p-3 shadow-lg">
+      <div className="ml-5 mr-5 mt-3 flex flex-col justify-start gap-3 rounded-xl bg-bg1 p-3 shadow-lg">
         {route.comments.map((comment) => {
           const user = getProfile(comment.username);
 
@@ -45,6 +45,7 @@ export default function Comments({ route }) {
           );
         })}
       </div>
+      <div className="h-20 text-opacity-0 opacity-0">footer</div>
     </>
   );
 }

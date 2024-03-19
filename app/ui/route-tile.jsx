@@ -32,6 +32,8 @@ export default function RouteTiles({ routeType }) {
                     width={800}
                     height={1000}
                     className="m-1 w-12 rounded-l-full"
+                    blurDataURL="data:..."
+                    placeholder="blur"
                   />
 
                   <p className="self-center text-center text-2xl font-semibold text-white">
@@ -75,6 +77,8 @@ export default function RouteTiles({ routeType }) {
                     width={800}
                     height={1000}
                     className="m-1 w-12 rounded-l-full"
+                    blurDataURL="data:..."
+                    placeholder="blur"
                   />
 
                   <p className="self-center text-center text-2xl font-semibold text-white">
@@ -104,6 +108,8 @@ export default function RouteTiles({ routeType }) {
                     width={512}
                     height={512}
                     className="ml-4 h-12 w-12 self-center justify-self-start"
+                    blurDataURL="data:..."
+                    placeholder="blur"
                   />
 
                   <p className="mr-4 self-center text-center text-2xl font-semibold text-white">
