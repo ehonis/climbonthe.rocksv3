@@ -10,8 +10,8 @@ export default function ProfilePage({ params }) {
         <div className="m-5 flex rounded-xl bg-bg1 p-4 shadow-lg">
           <Image
             src={foundPerson.image}
-            width={9999}
-            height={9999}
+            width={500}
+            height={500}
             alt="Picture of person"
             className="h-32 w-32 rounded-full shadow-lg"
           />

@@ -889,7 +889,7 @@ export const boulderRoutes = [
     description: "A super fun climb with a lot of exposure",
     date: "02/02/2024",
     href: "/routes/route-page/the-wurliest-burliest-man",
-    location: "main1",
+    location: "boulder1",
     comments: [
       {
         username: "jack",
@@ -912,7 +912,7 @@ export const boulderRoutes = [
     description: "A long climb with a lot of exposure",
     date: "02/03/2024",
     href: "/routes/route-page/the-long-dive",
-    location: "main2",
+    location: "boulder2",
     comments: [
       {
         username: "jack",
@@ -935,7 +935,7 @@ export const boulderRoutes = [
     description: "A challenging climb with a difficult crux",
     date: "02/04/2024",
     href: "/routes/route-page/the-crux-crusher",
-    location: "main2",
+    location: "boulder2",
     comments: [
       {
         username: "jack",
@@ -958,7 +958,7 @@ export const boulderRoutes = [
     description: "A technical climb on a slab wall",
     date: "02/05/2024",
     href: "/routes/route-page/the-slab-master",
-    location: "AB",
+    location: "boulder1",
     comments: [
       {
         username: "jack",
@@ -981,7 +981,7 @@ export const boulderRoutes = [
     description: "A powerful dyno move required to complete the climb",
     date: "02/06/2024",
     href: "/routes/route-page/cheese-has-protein",
-    location: "main1",
+    location: "boulder1",
     comments: [
       {
         username: "jack",

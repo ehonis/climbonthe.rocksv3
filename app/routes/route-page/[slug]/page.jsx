@@ -17,8 +17,8 @@ export default function RoutePage({ params }) {
         <div className="m-5 mb-3 mt-3 flex rounded-xl bg-bg1 p-3 shadow-lg">
           <Image
             src={foundRoute.image}
-            width={600}
-            height={1000}
+            width={300}
+            height={500}
             alt="picture of route"
             className="h-36 w-64"
           />
