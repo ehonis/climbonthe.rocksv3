@@ -30,8 +30,8 @@ export default function SelectedWallTile({ wallName }) {
                 <Image
                   src={route.image}
                   alt="image"
-                  width={800}
-                  height={1000}
+                  width={100}
+                  height={100}
                   className="m-1 w-12 rounded-l-full"
                 />
 

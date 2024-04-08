@@ -23,8 +23,8 @@ export default function Comments({ route }) {
                   <Link href={user.href} className="w-30">
                     <Image
                       src={user.image}
-                      width={1000}
-                      height={1000}
+                      width={100}
+                      height={100}
                       alt="picture of the person who commment"
                       className="h-16 w-16 self-center rounded-full shadow-lg"
                     />

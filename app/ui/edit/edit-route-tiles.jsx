@@ -73,8 +73,8 @@ export default function EditRouteTiles({ type }) {
             >
               <Image
                 src={route.image}
-                width={500}
-                height={500}
+                width={50}
+                height={50}
                 alt="picture of route"
                 className="h-12 w-12 self-center rounded-md pr-1"
               />

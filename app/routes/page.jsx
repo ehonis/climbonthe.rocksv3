@@ -14,10 +14,7 @@ export default function Routes() {
     setActiveWall(data);
   };
   return (
-    <main className="h-{120vh} w-full">
-      <h1 className="mt-2 text-center text-3xl font-bold text-white">
-        Top Down View
-      </h1>
+    <main className=" w-full">
       <div className="m-5 mt-2 flex flex-col justify-center overflow-y-hidden rounded-3xl bg-bg1 p-3 shadow-lg">
         <TopDown onData={handleData} />
         <p className="animate-flash-slow self-center text-center text-sm font-semibold text-white">

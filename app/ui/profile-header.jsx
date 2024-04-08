@@ -5,8 +5,8 @@ export default function ProfileHeader() {
   return (
     <div className="m-5 flex items-center justify-between overflow-hidden rounded-3xl bg-bg1 p-5 shadow-lg">
       <Image
-        width={9999}
-        height={9999}
+        width={100}
+        height={100}
         src={currentUser.image}
         className="h-28 w-28 rounded-full"
       />

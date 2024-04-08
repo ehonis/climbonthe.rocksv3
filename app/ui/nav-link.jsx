@@ -5,6 +5,7 @@ import {
   MagnifyingGlassIcon,
   PencilIcon,
   UserCircleIcon,
+  Bars3Icon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { currentUser } from "../lib/placeholder-data";
@@ -22,23 +23,13 @@ const links = [
   {
     name: "home",
     href: "/",
-    icon: HomeIcon,
+    icon: Bars3Icon,
   },
-  {
-    name: "route",
-    href: "/routes",
-    icon: BoltIcon,
-  },
+
   {
     name: "search",
     href: "/search",
     icon: MagnifyingGlassIcon,
-  },
-
-  {
-    name: "profile",
-    href: currentUserHref,
-    icon: UserCircleIcon,
   },
 ];
 if (currentUser) {
@@ -69,7 +60,7 @@ export default function NavLinks() {
             >
               <LinkIcon
                 className={clsx(
-                  "h-[50px] w-[50px] self-center stroke-iconbg p-[6px]",
+                  "h-[48px] w-[48px] self-center stroke-iconbg p-[8px]",
                   {
                     "stroke-white": pathname === link.href,
                   },

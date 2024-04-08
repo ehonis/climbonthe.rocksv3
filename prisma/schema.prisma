@@ -1,0 +1,89 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+model User {
+  id            Int                      @id @default(autoincrement())
+  username      String                   @unique
+  name          String
+  email         String                   @unique
+  admin         Boolean
+  role          String
+  image         String?
+  password      String
+  href          String
+  createdAt     DateTime                 @default(now()) @map(name: "created_at")
+  updatedAt     DateTime                 @updatedAt @map(name: "updated_at")
+  ropeRoutes    RopeRouteCompletion[]
+  boulderRoutes BoulderRouteCompletion[]
+  comments      Comment[]
+}
+
+model RopeRouteCompletion {
+  id      Int      @id @default(autoincrement())
+  userId  Int
+  routeId Int
+  date    DateTime
+  flash   Boolean
+  user    User     @relation(fields: [userId], references: [id])
+}
+
+model BoulderRouteCompletion {
+  id      Int      @id @default(autoincrement())
+  userId  Int
+  routeId Int
+  date    DateTime
+  flash   Boolean
+  user    User     @relation(fields: [userId], references: [id])
+}
+
+model RopeRoute {
+  id             Int       @id @default(autoincrement())
+  name           String
+  grade          String
+  communityGrade String?
+  color          String
+  type           String
+  image          String
+  description    String
+  date           DateTime
+  href           String
+  location       String
+  ascents        Int
+  comments       Comment[]
+}
+
+model BoulderRoute {
+  id             Int       @id @default(autoincrement())
+  name           String
+  grade          String
+  communityGrade String?
+  color          String
+  type           String
+  image          String
+  description    String
+  date           DateTime
+  href           String
+  location       String
+  ascents        Int
+  comments       Comment[]
+}
+
+model Comment {
+  id             Int           @id @default(autoincrement())
+  comment        String
+  userId         Int
+  user           User          @relation(fields: [userId], references: [id])
+  ropeRouteId    Int? // Nullable foreign key
+  ropeRoute      RopeRoute?    @relation(fields: [ropeRouteId], references: [id])
+  boulderRouteId Int? // Nullable foreign key
+  boulderRoute   BoulderRoute? @relation(fields: [boulderRouteId], references: [id])
+}

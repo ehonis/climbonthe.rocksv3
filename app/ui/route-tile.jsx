@@ -29,8 +29,8 @@ export default function RouteTiles({ routeType }) {
                   <Image
                     src={route.image}
                     alt="image"
-                    width={300}
-                    height={500}
+                    width={100}
+                    height={100}
                     className="m-1 w-12 rounded-l-full"
                     blurDataURL="data:..."
                     placeholder="blur"
@@ -74,8 +74,8 @@ export default function RouteTiles({ routeType }) {
                   <Image
                     src={route.image}
                     alt="image"
-                    width={300}
-                    height={500}
+                    width={100}
+                    height={100}
                     className="m-1 w-12 rounded-l-full"
                     blurDataURL="data:..."
                     placeholder="blur"
@@ -105,8 +105,8 @@ export default function RouteTiles({ routeType }) {
                   <Image
                     src={event.image}
                     alt="image"
-                    width={300}
-                    height={500}
+                    width={100}
+                    height={100}
                     className="ml-4 h-12 w-12 self-center justify-self-start"
                     blurDataURL="data:..."
                     placeholder="blur"

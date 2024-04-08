@@ -17,8 +17,8 @@ export default function RoutePage({ params }) {
         <div className="m-5 mb-3 mt-3 flex rounded-xl bg-bg1 p-3 shadow-lg">
           <Image
             src={foundRoute.image}
-            width={300}
-            height={500}
+            width={800}
+            height={1200}
             alt="picture of route"
             className="h-36 w-64"
           />
@@ -41,7 +41,7 @@ export default function RoutePage({ params }) {
         <div className="ml-5 mr-5 flex justify-between">
           <div className="mr-3 flex w-full flex-col items-center rounded-xl bg-bg1 p-4 shadow-lg">
             <h2 className="gradient-text-blue m-0 p-0 text-8xl font-bold">
-              12
+              {foundRoute.ascents}
             </h2>
             <p className="m-0 p-0 text-lg font-semibold text-white">ascents</p>
           </div>

@@ -24,6 +24,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 10,
   },
   {
     name: "Sike!",
@@ -47,6 +48,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 6,
   },
   {
     name: "Uh...Oh...Ah",
@@ -70,6 +72,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 3,
   },
   {
     name: "When Pigs Fly",
@@ -93,6 +96,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 5,
   },
   {
     name: "Tin Man",
@@ -116,6 +120,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 7,
   },
   {
     name: "Broken Hearts",
@@ -139,6 +144,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 23,
   },
   {
     name: "Door Open, Door Closed",
@@ -162,6 +168,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 99,
   },
   {
     name: "Two Hats",
@@ -185,6 +192,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 10,
   },
   {
     name: "Fly Away",
@@ -208,6 +216,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 2,
   },
   {
     name: "The Clearing",
@@ -231,6 +240,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 3,
   },
   {
     name: "Q-and-A",
@@ -254,6 +264,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 2,
   },
   {
     name: "New Car Smell",
@@ -277,6 +288,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 3,
   },
   {
     name: "Mint",
@@ -300,6 +312,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 5,
   },
   {
     name: "Cheese Sticks Have Protein?",
@@ -323,6 +336,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 2,
   },
   {
     name: "Stay Golden, Pony Boy",
@@ -346,6 +360,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 3,
   },
   {
     name: "Did You Touch My Drumset",
@@ -369,6 +384,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 6,
   },
   {
     name: "I Was Watching Cops",
@@ -392,6 +408,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 10,
   },
   {
     name: "Why Are You So Sweaty",
@@ -415,6 +432,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 12,
   },
   {
     name: "Catalina Wine Mixer",
@@ -438,6 +456,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 12,
   },
   {
     name: "Wednesdays at the Lode",
@@ -461,6 +480,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 1,
   },
   {
     name: "Gone Too Far",
@@ -484,6 +504,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 10,
   },
   {
     name: "Cat's Game",
@@ -507,6 +528,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 10,
   },
   {
     name: "Beginner",
@@ -530,6 +552,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 15,
   },
   {
     name: "Trivlo Cheater",
@@ -553,6 +576,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 7,
   },
   {
     name: "No Longer A Pipedream",
@@ -576,6 +600,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 10,
   },
   {
     name: "Blindspot",
@@ -599,6 +624,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 2,
   },
   {
     name: "The Smile",
@@ -622,9 +648,10 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 10,
   },
   {
-    name: "Politically Innocrracked",
+    name: "Politically Innocracked",
     grade: "5.10",
     color: "Orange",
     type: "Lead",
@@ -645,6 +672,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 4,
   },
   {
     name: "Cracking Up",
@@ -668,6 +696,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 4,
   },
   {
     name: "Evan's Project",
@@ -691,6 +720,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 4,
   },
   {
     name: "The Cracken",
@@ -714,6 +744,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 3,
   },
   {
     name: "Snap, Crackle, Pop",
@@ -737,6 +768,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 3,
   },
   {
     name: "Cracker Barrel",
@@ -760,6 +792,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 6,
   },
   {
     name: "Clean Skin",
@@ -783,6 +816,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 7,
   },
   {
     name: "Caught in the Crossfire",
@@ -806,6 +840,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 7,
   },
   {
     name: "Achilles Heel",
@@ -852,6 +887,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 4,
   },
   {
     name: "Queen of Dreams",
@@ -875,6 +911,7 @@ export const ropeRoutes = [
         comment: "really hard route, jack is wrong^",
       },
     ],
+    ascents: 8,
   },
 ];
 
@@ -884,12 +921,13 @@ export const boulderRoutes = [
     grade: "V1",
     color: "Blue",
     type: "Boulder",
-    id: "00001",
+    id: 1,
     image: "/img/rope1.jpg",
     description: "A super fun climb with a lot of exposure",
     date: "02/02/2024",
     href: "/routes/route-page/the-wurliest-burliest-man",
     location: "boulder1",
+    ascents: 10,
     comments: [
       {
         username: "jack",
@@ -907,7 +945,7 @@ export const boulderRoutes = [
     grade: "V2",
     color: "Yellow",
     type: "Boulder",
-    id: "00002",
+    id: 2,
     image: "/img/rope2.jpg",
     description: "A long climb with a lot of exposure",
     date: "02/03/2024",
@@ -930,7 +968,7 @@ export const boulderRoutes = [
     grade: "V3",
     color: "Red",
     type: "Boulder",
-    id: "00003",
+    id: 3,
     image: "/img/rope2.jpg",
     description: "A challenging climb with a difficult crux",
     date: "02/04/2024",
@@ -953,7 +991,7 @@ export const boulderRoutes = [
     grade: "V3",
     color: "Gray",
     type: "Boulder",
-    id: "00004",
+    id: 4,
     image: "/img/rope2.jpg",
     description: "A technical climb on a slab wall",
     date: "02/05/2024",
@@ -976,7 +1014,7 @@ export const boulderRoutes = [
     grade: "V6",
     color: "Pink",
     type: "Boulder",
-    id: "00005",
+    id: 5,
     image: "/img/boulder1.jpg",
     description: "A powerful dyno move required to complete the climb",
     date: "02/06/2024",
@@ -995,6 +1033,7 @@ export const boulderRoutes = [
     ],
   },
 ];
+
 export const events = [
   {
     name: "2024 Ropes League",
@@ -1005,7 +1044,7 @@ export const events = [
     href: "/events/2024-ropes-league",
   },
 ];
-export const profiles = [
+export const user = [
   {
     username: "ehonis",
     name: "Ethan",
@@ -1047,31 +1086,78 @@ export const profiles = [
     href: "/profile/jack",
     rope_routes: [
       {
-        id: "00001",
+        id: 1,
         date: "2024-01-01",
         flash: true,
       },
       {
-        id: "00002",
+        id: 2,
         date: "2024-01-01",
         flash: true,
       },
       {
-        id: "00003",
+        id: 3,
         date: "2024-01-01",
         flash: true,
       },
       {
-        id: "00004",
+        id: 4,
         date: "2024-01-01",
         flash: false,
       },
       {
-        id: "00005",
+        id: 5,
+        date: "2024-01-01",
+        flash: true,
+      },
+      {
+        id: 6,
+        date: "2024-01-04",
+        flash: false,
+      },
+    ],
+    boulder_routes: [
+      {
+        id: 1,
+        date: "2024-01-01",
+        flash: true,
+      },
+      {
+        id: 2,
+        date: "2024-01-01",
+        flash: true,
+      },
+      {
+        id: 3,
+        date: "2024-01-01",
+        flash: true,
+      },
+      {
+        id: 4,
+        date: "2024-01-01",
+        flash: false,
+      },
+      {
+        id: 5,
         date: "2024-01-01",
         flash: true,
       },
     ],
   },
 ];
-export let currentUser = profiles[3];
+export let currentUser = user[9];
+
+export function getAscents(person) {
+  const combinedData = [...person.rope_routes, ...person.boulder_routes];
+  return combinedData.length;
+}
+export function getFlash(person) {
+  const combinedData = [...person.rope_routes, ...person.boulder_routes];
+  let count = 0;
+  combinedData.forEach((item) => {
+    if (item.flash) {
+      count++;
+    }
+  });
+  return count;
+}

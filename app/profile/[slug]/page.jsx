@@ -1,9 +1,10 @@
-import { profiles } from "@/app/lib/placeholder-data";
+import { getAscents, getFlash, user } from "@/app/lib/placeholder-data";
 import Image from "next/image";
 export default function ProfilePage({ params }) {
-  const foundPerson = profiles.find(
-    (person) => person.username === params.slug,
-  );
+  const foundPerson = user.find((person) => person.username === params.slug);
+
+  const ascents = getAscents(foundPerson);
+  const flashes = getFlash(foundPerson);
   if (!(foundPerson === undefined)) {
     return (
       <>
@@ -32,13 +33,15 @@ export default function ProfilePage({ params }) {
         <div className="ml-5 mr-5 flex justify-between">
           <div className="mr-2 flex w-full flex-col items-center rounded-xl bg-bg1 p-4 shadow-lg">
             <h2 className="gradient-text-blue m-0 p-0 text-8xl font-bold">
-              12
+              {ascents}
             </h2>
             <p className="m-0 p-0 text-lg font-semibold text-white">ascents</p>
           </div>
           <div className="ml-3 flex w-full flex-col items-center rounded-xl bg-bg1 p-4 shadow-lg">
-            <h2 className="gradient-text m-0 p-0 text-8xl font-bold">32</h2>
-            <p className="m-0 p-0 text-lg font-semibold text-white">sets</p>
+            <h2 className="gradient-text m-0 p-0 text-8xl font-bold">
+              {flashes}
+            </h2>
+            <p className="m-0 p-0 text-lg font-semibold text-white">flashes</p>
           </div>
         </div>
       </>
