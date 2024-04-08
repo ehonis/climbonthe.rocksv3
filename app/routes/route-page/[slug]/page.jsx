@@ -7,7 +7,7 @@ export default function RoutePage({ params }) {
   const foundRoute = combinedData.find(
     (item) => item.href === "/routes/route-page/" + params.slug,
   );
-  console.log(foundRoute);
+
   if (!(foundRoute === undefined)) {
     return (
       <>

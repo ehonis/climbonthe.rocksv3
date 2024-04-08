@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-bg0`}>
-        <div className="fixed bottom-0 right-0 rounded-tl-lg bg-bg1 p-1 text-white outline outline-red-500">
+        <div className="fixed right-0 top-0 mt-14 rounded-bl-lg bg-bg0 p-1 text-xs text-white outline outline-red-500">
           Demo(WIP)
         </div>
         <NavBar />

@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <Link
           href="/routes"
-          className="mb-10 ml-5 text-2xl font-normal text-white underline"
+          className="mb-10 ml-5 text-lg font-normal text-white underline"
         >
           See All
         </Link>

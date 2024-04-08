@@ -1145,7 +1145,7 @@ export const user = [
     ],
   },
 ];
-export let currentUser = user[9];
+export let currentUser = user[3];
 
 export function getAscents(person) {
   const combinedData = [...person.rope_routes, ...person.boulder_routes];

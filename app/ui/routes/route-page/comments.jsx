@@ -1,18 +1,27 @@
-import { profiles } from "@/app/lib/placeholder-data";
+import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
+import { user } from "@/app/lib/placeholder-data";
 import Image from "next/image";
 import Link from "next/link";
+import ExpandingTextarea from "./expanding-text-area";
 
 function getProfile(name) {
-  const foundPerson = profiles.find((person) => person.username === name);
+  const foundPerson = user.find((person) => person.username === name);
   return foundPerson;
 }
 
 export default function Comments({ route }) {
   let count = 0;
+
   return (
     <>
       <h1 className="ml-5 mr-5 text-2xl font-bold text-white">Comments</h1>
       <div className="ml-5 mr-5 mt-3 flex flex-col justify-start gap-3 rounded-xl bg-bg1 p-3 shadow-lg">
+        <div className="flex items-center justify-normal space-x-3">
+          <ExpandingTextarea />
+          <button className="flex h-12 w-12 items-center justify-center rounded-full bg-iconbg p-[6px]">
+            <PaperAirplaneIcon className="h-8 w-8 stroke-white" />
+          </button>
+        </div>
         {route.comments.map((comment) => {
           const user = getProfile(comment.username);
 
@@ -32,7 +41,7 @@ export default function Comments({ route }) {
                 </div>
                 <div>
                   <Link href={user.href}>
-                    <p className="text-blue-400 text-lg font-bold">
+                    <p className="text-lg font-bold text-blue-400">
                       @{user.username}
                     </p>
                   </Link>

@@ -95,7 +95,7 @@
 }
 
 .animate-flash-slow {
-  animation: flash 2s infinite ease-in-out; /* Change duration to adjust the speed */
+  animation: flash 3s infinite ease-in-out; /* Change duration to adjust the speed */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
