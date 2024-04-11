@@ -5,7 +5,7 @@ export default function editPage() {
     <>
       <div className="mt-8 flex justify-between">
         <h2 className="ml-5 self-center text-3xl font-bold text-white">
-          Routes
+          Ropes
         </h2>
         <div id="editButton" className="flex pr-3 pt-2">
           <button className="h-10 w-10 self-center rounded-full bg-green-500">

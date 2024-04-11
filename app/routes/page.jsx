@@ -8,11 +8,11 @@ import SelectedWallLoad from "../ui/routes/selected-wall-load";
 
 export default function Routes() {
   const [activeWall, setActiveWall] = useState(null);
-  const [grandchildData, setGrandchildData] = useState(null);
 
   const handleData = (data) => {
     setActiveWall(data);
   };
+
   return (
     <main className=" w-full">
       <div className="m-5 mt-2 flex flex-col justify-center overflow-y-hidden rounded-3xl bg-bg1 p-3 shadow-lg">

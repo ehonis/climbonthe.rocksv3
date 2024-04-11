@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-
+import prisma from "./prisma";
 export const ropeRoutes = [
   {
     name: "Beginner Big Mike",
@@ -37,17 +37,7 @@ export const ropeRoutes = [
     date: "2024-01-01",
     href: `/routes/route-page/sike!`,
     location: "main2",
-    comments: [
-      {
-        username: "jack",
-        comment:
-          "loved this route, pretty easy beginning, felt like 5.6, but ended up pretty hard in the last moves",
-      },
-      {
-        username: "ehonis",
-        comment: "really hard route, jack is wrong^",
-      },
-    ],
+    comments: [],
     ascents: 6,
   },
   {
@@ -1160,4 +1150,10 @@ export function getFlash(person) {
     }
   });
   return count;
+}
+
+export async function fetchRopeRoutes() {
+  const ropeRoutes = await prisma.RopeRoute.findMany();
+  console.log(ropeRoutes);
+  return ropeRoutes;
 }

@@ -1,13 +1,36 @@
+"use client";
 import { ropeRoutes, boulderRoutes, events } from "../lib/placeholder-data";
 import Image from "next/image";
 import clsx from "clsx";
 import Link from "next/link";
+import prisma from "../lib/prisma";
+import { useEffect, useState } from "react";
 
 export default function RouteTiles({ routeType }) {
+  const [ropess, setRopes] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch("api/get-route");
+        const data = await res.json();
+
+        setRopes(data.ropes);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    if (routeType === "rope") {
+      fetchData();
+    }
+  }, [routeType]);
+  console.log("ropes:", ropess);
   if (routeType === "rope") {
+    const ropes = ropeRoutes;
     return (
       <>
-        {ropeRoutes.map((route) => {
+        {ropess.map((route) => {
           return (
             <Link key={route.id} href={route.href} className="mb-4 last:mb-0">
               <div
