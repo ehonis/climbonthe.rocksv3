@@ -1,11 +1,14 @@
 import { boulderRoutes, ropeRoutes, events } from "@/app/lib/placeholder-data";
 import Image from "next/image";
+import prisma from "@/app/lib/prisma";
 
-export default function EditRouteTiles({ type }) {
+export default async function EditRouteTiles({ type }) {
   if (type === "rope") {
+    const ropes = await prisma.RopeRoute.findMany();
+
     return (
       <div>
-        {ropeRoutes.map((route) => {
+        {ropes.map((route) => {
           return (
             <div
               key={route.id}
@@ -26,7 +29,9 @@ export default function EditRouteTiles({ type }) {
                   <span className="text-bluee">{route.grade}</span>
                 </p>
               </div>
-              <p className="self-center pr-1 text-white">{route.date}</p>
+              <p className="self-center pr-1 text-white">
+                {route.date.toLocaleDateString()}
+              </p>
             </div>
           );
         })}

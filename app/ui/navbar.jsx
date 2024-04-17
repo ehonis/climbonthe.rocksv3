@@ -104,6 +104,7 @@ export default function NavBar() {
                   key={link.name}
                   href={link.href}
                   className="my-2 w-full rounded-full"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   <div className="mx-2 flex items-center rounded-lg bg-bg1">
                     <LinkIcon className="h-[55px] w-[55px] self-center stroke-iconbg p-[8px]" />
